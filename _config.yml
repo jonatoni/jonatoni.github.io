@@ -1,0 +1,52 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: personal blog
+description: "Personal blog"
+keywords: "Blog, open source, community, diversity, inclusion"
+url: http://jona.azizaj.com
+
+repo: https://github.com/jonatoni/jonatoni.github.io
+disqus_shortname: "nandothemes"
+disqus_site_shortname: "nandothemes"
+
+# Author settings
+author:
+  name: Jona Azizaj
+  job: Developer Relations 🥑
+  bio: "FLOSS Advocate 📢, STEMinist 🌻, and always looking for the next travel adventure."
+  thumb: /images/author.jpg
+  email: jona@azizaj.com
+  url: https://jona.azizaj.com
+  github: https://github.com/jonatoni
+  twitter: https://twitter.com/jonatoni
+  facebook: https://facebook.com/jona.azizaj
+  linkedin: https://linkedin.com/in/jonaazizaj
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: icons
+    title: Icons
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
